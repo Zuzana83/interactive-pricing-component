@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./main.css">
+
+  <title>Frontend Mentor | Interactive pricing component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; margin-top: 1.5rem;}
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <section class="pricing-component">
+    <div class="section-title">
+      <h2 class="title">Simple, traffic-based pricing</h2>
+      <p class="introductory">Sign-up for our 30-day trial. No credit card required. </p>
+      <img src="./images/pattern-circles.svg" alt="circles pattern" class="title-pattern">
+    </div>
+    <form class="pricing-form" id="pricing-form">
+      <div class="stats">
+        <p class="page-views">
+          <span class="amount" id="amount">100</span>
+          pageviews
+        </p>
+        <p class="price-wrapper">
+          <span class="price" id="price"></span>
+          / month
+        </p>
+      <!-- Input slider -->
+      <input type="range" class="price-slider" name="slider" id="price-slider" min="0" max="4" value="16" step="1"> 
+      </div>
+  
+      <!-- Billing toggle -->
+      <div class="billing-toggle">
+        <p class="billing-text monthly">Monthly Billing</p>
+        <div class="switch">
+          <input type="checkbox" name="bill-switch" id="bill-switch">
+          <label for="bill-switch" class="switch-label"></label>
+        </div>
+        <p class="billing-text yearly">Yearly Billing</p>
+        <p class="discount-info info-big">25% discount</p>
+        <p class="discount-info info-small">-25%</p>
+      </div>
+      <!-- Form Footer -->
+      <div class="form-footer">
+        <ul class="features-list">
+          <li class="feature">
+            <svg xmlns="http://www.w3.org/2000/svg" width="9" height="8"><path fill="none" stroke="#10D8C4" stroke-width="2" d="M1 4.134l1.907 1.908L7.949 1"/></svg>
+             Unlimited websites
+          </li>
+          <li class="feature">
+            <svg xmlns="http://www.w3.org/2000/svg" width="9" height="8"><path fill="none" stroke="#10D8C4" stroke-width="2" d="M1 4.134l1.907 1.908L7.949 1"/></svg>
+             100% data ownership
+          </li>
+          <li class="feature">
+            <svg xmlns="http://www.w3.org/2000/svg" width="9" height="8"><path fill="none" stroke="#10D8C4" stroke-width="2" d="M1 4.134l1.907 1.908L7.949 1"/></svg>
+             Email reports
+          </li>
+        </ul>
+        <button type="button" class="trial-btn" id="trial-btn">Start my trial</button>
+      </div>
+    </form>
+  </section>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">z83studio</a>.
+  </div>
+
+  <!-- Background pattern -->
+  <img src="./images/bg-pattern.svg" alt="abstract pattern on main background" class="bg-pattern">
+
+  <script src="./app.js"></script>
+</body>
+</html>
